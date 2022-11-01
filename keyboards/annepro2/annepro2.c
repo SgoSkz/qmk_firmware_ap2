@@ -128,22 +128,22 @@ bool OVERRIDE process_record_kb(uint16_t keycode, keyrecord_t *record) {
         switch (keycode) {
             case KC_AP2_BT1:
                 annepro2_ble_broadcast(0);
-                annepro2LedBlink(record->event.key.col, record->event.key.row, blue, 8, 50);
+                annepro2LedBlink(record->event.key.row, record->event.key.col, blue, 8, 50);
                 return false;
 
             case KC_AP2_BT2:
                 annepro2_ble_broadcast(1);
-                annepro2LedBlink(record->event.key.col, record->event.key.row, blue, 8, 50);
+                annepro2LedBlink(record->event.key.row, record->event.key.col, blue, 8, 50);
                 return false;
 
             case KC_AP2_BT3:
                 annepro2_ble_broadcast(2);
-                annepro2LedBlink(record->event.key.col, record->event.key.row, blue, 8, 50);
+                annepro2LedBlink(record->event.key.row, record->event.key.col, blue, 8, 50);
                 return false;
 
             case KC_AP2_BT4:
                 annepro2_ble_broadcast(3);
-                annepro2LedBlink(record->event.key.col, record->event.key.row, blue, 8, 50);
+                annepro2LedBlink(record->event.key.row, record->event.key.col, blue, 8, 50);
                 return false;
 
             case KC_AP2_USB:
